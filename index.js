@@ -21,7 +21,7 @@ function escapeHtml(text) {
 }
 
 /** @param {unknown} data */
-function renderJSON(data, indent = 0) {
+function renderJson(data, indent = 0) {
   const indentStr = '  '.repeat(indent);
   let html = '';
 
@@ -37,7 +37,7 @@ function renderJSON(data, indent = 0) {
 
     data.forEach((item, i) => {
       html += `${indentStr}  `;
-      html += renderJSON(item, indent + 1);
+      html += renderJson(item, indent + 1);
       if (i < data.length - 1) {
         html += '<span class="json-comma">,</span>';
       }
@@ -60,7 +60,7 @@ function renderJSON(data, indent = 0) {
     keys.forEach((key, i) => {
       html += `${indentStr}  `;
       html += `<span class="json-key">"${escapeHtml(key)}"</span>: `;
-      html += renderJSON(data[key], indent + 1);
+      html += renderJson(data[key], indent + 1);
       if (i < keys.length - 1) {
         html += '<span class="json-comma">,</span>';
       }
@@ -245,7 +245,7 @@ function renderJSON(data, indent = 0) {
   document.body.appendChild(toolbar);
   document.body.appendChild(container);
 
-  container.innerHTML = renderJSON(jsonData);
+  container.innerHTML = renderJson(jsonData);
 
   // collapse/expand
   container.addEventListener('click', (e) => {
