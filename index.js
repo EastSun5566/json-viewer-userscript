@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JSON Viewer
 // @namespace    https://github.com/EastSun5566
-// @version      0.0.1
+// @version      0.0.2
 // @description  Beautify JSON display in browser
 // @author       Michael Wang
 // @license      MIT
