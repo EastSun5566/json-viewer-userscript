@@ -1,4 +1,3 @@
-/* eslint-disable no-alert */
 // ==UserScript==
 // @name         JSON Viewer
 // @namespace    https://github.com/EastSun5566
@@ -12,6 +11,7 @@
 // ==/UserScript==
 
 // @ts-check
+/* eslint-disable no-alert */
 
 /** @param {string} text  */
 function escapeHtml(text) {
