@@ -1,6 +1,6 @@
 {
   "name": "json-viewer-userscript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "🖼️ A userScript to beautify JSON display in browser",
   "main": "index.js",
   "scripts": {
